@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Header */
+
+header {
+  padding: 15px 40px;
+  background-color: #df7463;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  height: 50px;
+  background-color: whitesmoke;
+}
+
+nav li {
+  display: inline;
+  padding: 0 5px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+/* Main */
+
+.top-main {
+  background-color: yellowgreen;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-box {
+  display: flex;
+  flex-direction: column;
+  width: 410px;
+  padding: 30px 20px;
+  background-color: rgba(255, 255, 255, 0.473);
+  margin: 10px 0;
+}
+
+.search-box button {
+  border: 1px white solid;
+  background-color: #df7463;
+  color: white;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+.search-box input {
+  border: 1px white solid;
+  background-color: white;
+  color: gray;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+.top-main button {
+  border: 1px white solid;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+.middle-main {
+  display: grid;
+  grid-template-rows: auto auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.middle-main h4 {
+  color: #df7463;
+}
+
+.steps-template {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.steps-template > * {
+  padding: 20px;
+  color: rgb(107, 107, 107);
+}
+
+@media only screen and (max-width: 768px){
+  nav li {
+    display: none;
+  }
+
+  nav i {
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  nav li {
+    display: none;
+  }
+
+  nav i {
+    padding: 0 10px;
+  }
+}
