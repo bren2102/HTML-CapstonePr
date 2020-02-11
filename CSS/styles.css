@@ -13,6 +13,7 @@ header {
   padding: 15px 40px;
   background-color: #df7463;
   color: white;
+  width: fit-content;
 }
 
 nav {
@@ -39,13 +40,22 @@ nav ul {
 /* Main */
 
 .top-main {
-  background-color: yellowgreen;
-  width: 100%;
   height: auto;
+  width: auto;
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0)), url("https://todoislas.com/wp-content/uploads/2018/08/playa-de-jimbaran.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.top-main h2 {
+  display: flex;
+  align-self: flex-start;
 }
 
 .search-box {
@@ -53,27 +63,38 @@ nav ul {
   flex-direction: column;
   width: 410px;
   padding: 30px 20px;
-  background-color: rgba(255, 255, 255, 0.473);
+  background-color: rgba(255, 255, 255, 0.527);
   margin: 10px 0;
+  border-radius: 8px;
+}
+
+.search-box div {
+  display: flex;
 }
 
 .search-box button {
-  border: 1px white solid;
+  border: 1px #df7463 solid;
   background-color: #df7463;
   color: white;
-  padding: 5px;
+  padding: 10px 20px;
   margin: 5px 0;
+  flex-grow: 2;
 }
 
 .search-box input {
   border: 1px white solid;
   background-color: white;
   color: gray;
-  padding: 5px;
+  padding: 10px;
   margin: 5px 0;
+  flex-grow: 2;
 }
 
-.top-main button {
+.search-box h4 {
+  color: rgb(82, 82, 82);
+}
+
+.gen-button {
   border: 1px white solid;
   padding: 5px;
   margin: 5px 0;
@@ -84,15 +105,7 @@ nav ul {
   grid-template-rows: auto auto;
   text-align: center;
   padding: 20px;
-}
-
-.middle-main h4 {
   color: #df7463;
-}
-
-.steps-template {
-  display: grid;
-  grid-template-columns: auto auto;
 }
 
 .steps-template > * {
@@ -100,13 +113,33 @@ nav ul {
   color: rgb(107, 107, 107);
 }
 
-@media only screen and (max-width: 768px){
+.steps-template {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+@media only screen and (max-width: 768px) {
   nav li {
     display: none;
   }
 
   nav i {
-    padding: 0 10px;
+    padding: 20px 20px 10px 20px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .search-box div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .steps-template {
+    display: grid;
+    grid-template-columns: auto;
   }
 }
 
