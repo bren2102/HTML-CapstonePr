@@ -43,20 +43,29 @@ nav ul {
 .top-main {
   height: auto;
   width: auto;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: white;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0)), url("https://todoislas.com/wp-content/uploads/2018/08/playa-de-jimbaran.jpg");
+  background-image: url("https://todoislas.com/wp-content/uploads/2018/08/playa-de-jimbaran.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.top-main h2 {
+.top-main div:first-child h2 {
   display: flex;
-  align-self: flex-start;
+}
+
+.search-box div {
+  display: flex;
+}
+
+.top-main div:first-child {
+  width: fit-content;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.37));
 }
 
 .search-box {
@@ -67,10 +76,6 @@ nav ul {
   background-color: rgba(255, 255, 255, 0.527);
   margin: 10px 0;
   border-radius: 8px;
-}
-
-.search-box div {
-  display: flex;
 }
 
 .search-box button {
@@ -125,13 +130,21 @@ nav ul {
   padding: 3px 5px;
 }
 
-.first {
+.feature-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  background-color: #df7463;
-  padding: 10px;
+  padding: 0 15%;
   line-height: 1.7;
+}
+
+.feature-container div:first-child {
+  width: 40%;
+  margin: 50px 0;
+}
+
+.first {
+  background-color: #df7463;
 }
 
 .first button {
@@ -139,12 +152,7 @@ nav ul {
 }
 
 .second {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   background-color: #98a4a5;
-  padding: 10px;
-  line-height: 1.7;
 }
 
 .second button {
@@ -152,12 +160,7 @@ nav ul {
 }
 
 .third {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   background-color: #509bd7;
-  padding: 10px;
-  line-height: 1.7;
 }
 
 .third button {
@@ -165,7 +168,6 @@ nav ul {
 }
 
 .bottom-main img {
-  width: 100px;
   height: 100px;
   background-color: red;
 }
@@ -198,7 +200,7 @@ footer nav ul {
   position: relative;
 }
 
-.cirlce-icon {
+.circle-icon {
   position: absolute;
   border-radius: 500px;
   border: 1px solid white;
@@ -209,7 +211,7 @@ footer nav ul {
   text-align: center;
 }
 
-.cirlce-icon i {
+.circle-icon i {
   top: 18px;
   position: relative;
 }
@@ -220,10 +222,12 @@ footer nav ul {
 }
 
 .contact section {
-  text-align: center;
   align-items: center;
   flex-grow: 1;
+  padding: 10px;
   width: 33%;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact section:first-child div {
@@ -250,8 +254,20 @@ footer nav ul {
 }
 
 .social-footer {
-  background-color: gray;
-  color: rgb(206, 206, 206);
+  background-color: #1f1f1f;
+  color: rgba(206, 206, 206, 0.829);
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+}
+
+.social-footer ul {
+  display: flex;
+  list-style: none;
+}
+
+.social-footer li {
+  padding: 10px 5px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -268,7 +284,7 @@ footer nav ul {
     flex-direction: column;
   }
 
-  .cirlce-icon {
+  .circle-icon {
     display: none;
   }
 
@@ -280,6 +296,11 @@ footer nav ul {
   .steps-template {
     display: grid;
     grid-template-columns: auto;
+  }
+
+  .feature-container div:first-child {
+    width: 60%;
+    margin: 30px 0;
   }
 
   /* Footer */
@@ -294,6 +315,7 @@ footer nav ul {
     text-align: center;
     align-items: center;
     flex-grow: 1;
+    width: 100%;
   }
 
   .contact > * {
@@ -301,6 +323,11 @@ footer nav ul {
     display: flex;
     flex-direction: column;
     padding: 10px;
+  }
+
+  .social-footer {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -326,7 +353,20 @@ footer nav ul {
     flex-grow: 1;
   }
 
-  .cirlce-icon {
+  .circle-icon {
     display: none;
+  }
+
+  .feature-container div:first-child {
+    width: 60%;
+    margin: 30px 0;
+  }
+
+  .contact section:first-child input {
+    width: 60%;
+  }
+
+  .contact section:first-child button {
+    width: 40%;
   }
 }
