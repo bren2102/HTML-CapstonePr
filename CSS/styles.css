@@ -5,12 +5,13 @@
 
 body {
   font-family: 'Raleway', sans-serif;
+  color: white;
 }
 
 /* Header */
 
 header {
-  padding: 15px 40px;
+  padding: 8px 40px;
   background-color: #df7463;
   color: white;
   width: fit-content;
@@ -23,9 +24,9 @@ nav {
 }
 
 .logo {
-  width: 100px;
-  height: 50px;
-  background-color: whitesmoke;
+  font-family: 'Gloria Hallelujah', cursive;
+  color: white;
+  font-size: 20px;
 }
 
 nav li {
@@ -118,13 +119,97 @@ nav ul {
   grid-template-columns: auto auto;
 }
 
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+footer nav {
+  font-weight: bold;
+}
+
+.detail-footer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 5px 0;
+  border-top: 1px white solid;
+  border-bottom: 1px white solid;
+  position: relative;
+}
+
+.cirlce-icon {
+  position: absolute;
+  border-radius: 500px;
+  border: 1px solid white;
+  background-color: black;
+  top: -18px;
+  width: 50px;
+  height: 60px;
+  text-align: center;
+}
+
+.cirlce-icon i {
+  top: 18px;
+  position: relative;
+}
+
+.contact {
+  display: flex;
+  padding: 20px;
+}
+
+.contact section {
+  text-align: center;
+  align-items: center;
+  flex-grow: 1;
+  width: 33%;
+}
+
+.contact section:first-child div {
+  display: flex;
+}
+
+.contact section:first-child input {
+  border: 1px solid gray;
+  color: gray;
+  padding: 10px 20px;
+  background-color: black;
+}
+
+.contact section:first-child button {
+  border: 1px solid gray;
+  background-color: gray;
+  color: white;
+  padding: 5px 20px;
+}
+
+.contact a,
+.contact a:hover {
+  color: #df7463;
+}
+
+.social-footer {
+  background-color: gray;
+  color: rgb(206, 206, 206);
+}
+
 @media only screen and (max-width: 768px) {
-  nav li {
+  header nav li {
     display: none;
   }
 
   nav i {
-    padding: 20px 20px 10px 20px;
+    padding: 5px 20px 5px 20px;
   }
 
   nav {
@@ -141,14 +226,48 @@ nav ul {
     display: grid;
     grid-template-columns: auto;
   }
+
+  /* Footer */
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact section {
+    text-align: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  .contact > * {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  nav li {
+  header nav li {
     display: none;
   }
 
   nav i {
     padding: 0 10px;
+  }
+
+  .contact > * {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact section {
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    flex-grow: 1;
   }
 }
