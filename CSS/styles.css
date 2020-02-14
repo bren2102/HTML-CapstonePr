@@ -111,7 +111,7 @@ footer nav a {
 }
 
 .steps-template div {
-  padding: 20px 20px 40px;
+  padding: 20px 100px 40px;
 }
 
 .more-details div {
@@ -182,6 +182,7 @@ footer nav a {
   border: 1px white solid;
   padding: 10px;
   margin: 5px 0;
+  background-color: white;
 }
 
 .middle-main {
@@ -262,8 +263,9 @@ footer nav a {
 }
 
 .bottom-main img {
-  height: 100px;
-  background-color: red;
+  width: 350px;
+  border-radius: 50px;
+  border-style: dashed;
 }
 
 /* Footer */
@@ -364,7 +366,10 @@ footer nav ul {
 .img-res4,
 .img-res5,
 .img-res6,
-.img-res7 {
+.img-res7,
+button,
+footer i,
+.logo {
   cursor: pointer;
 }
 
@@ -451,7 +456,7 @@ footer nav ul {
 }
 
 .results-found {
-  padding: 10px;
+  padding: 30px 10px 10px 10px;
   display: flex;
   flex-flow: wrap;
   flex-direction: row;
@@ -517,6 +522,7 @@ footer nav ul {
 
 .map h4 {
   padding-bottom: 50px;
+  font-size: 20px;
 }
 
 .search-div input,
@@ -609,6 +615,13 @@ footer nav ul {
     grid-template-columns: 1fr;
   }
 
+  .feature-container {
+    display: flex;
+    align-items: center;
+    padding: 4% 15%;
+    flex-direction: column;
+  }
+
   .results-found div {
     width: 90%;
     margin: 10px;
@@ -625,6 +638,7 @@ footer nav ul {
   .feature-container div:first-child {
     width: 60%;
     margin: 30px 0;
+    order: 2;
   }
 
   .search-inputs div:nth-child(6) {
@@ -632,7 +646,15 @@ footer nav ul {
     width: 100%;
     margin: 0;
     flex-direction: column;
+  }
 
+  .more-details div {
+    background-color: #f5f5f5;
+    padding: 20px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: 17px;
+    margin-top: 20px;
   }
 
   .search-inputs {
@@ -670,7 +692,9 @@ footer nav ul {
   .contact {
     display: flex;
     flex-direction: column;
+    padding: 20px 20px 10px;
     align-items: center;
+    text-align: center;
   }
 
   .contact section {
@@ -693,12 +717,10 @@ footer nav ul {
   }
 
   .resort-specific {
-
     padding: 10px;
     display: flex;
     display: column;
     flex-flow: wrap;
-    flex-direction: row;
     flex-direction: row;
     justify-content: center;
   }
@@ -738,7 +760,7 @@ footer nav ul {
   }
 
   .detail-footer {
-    background-color:black;
+    background-color: black;
     display: flex;
     flex-direction: column;
     padding: 45px 25px 25px;
@@ -746,12 +768,6 @@ footer nav ul {
 
   footer nav li {
     padding-bottom: 10px;
-  }
-
-  .contact {
-    display: flex;
-    padding: 20px 20px 10px;
-    text-align: center;
   }
 }
 
@@ -807,6 +823,15 @@ footer nav ul {
     flex-flow: wrap;
   }
 
+  .more-details div {
+    background-color: #f5f5f5;
+    padding: 20px;
+    font-weight: bold;
+    letter-spacing: 8px;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
   .search-div {
     width: 45%;
     padding: 5px 10px;
@@ -819,9 +844,17 @@ footer nav ul {
     justify-content: center;
   }
 
+  .feature-container {
+    display: flex;
+    align-items: center;
+    padding: 4% 15%;
+    flex-direction: column;
+  }
+
   .feature-container div:first-child {
     width: 60%;
     margin: 30px 0;
+    order: 2;
   }
 
   .search-div input,
