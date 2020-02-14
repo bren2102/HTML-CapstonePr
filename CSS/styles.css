@@ -482,7 +482,7 @@ footer i,
 
 .contact-specific {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   flex-direction: column;
   font-weight: bold;
 }
