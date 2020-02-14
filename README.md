@@ -43,6 +43,12 @@
 
 [Live Demo Link](https://raw.githack.com/bren2102/HTML-CapstonePr/feature-branch/index.html)
 
+
+## Preview Video
+
+[Live Demo Link](https://www.loom.com/share/7446d85800194634a187acde4e6a3955)
+
+
 ### Prerequisites
 To make this repository working in your local machine you need only a browser.
 
