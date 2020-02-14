@@ -472,6 +472,11 @@ footer i,
   box-shadow: 0 0 10px #929292;
 }
 
+h6,
+.circle-icon span {
+  display: none;
+}
+
 .resort-specific {
   padding: 10px;
   display: flex;
@@ -591,7 +596,7 @@ footer i,
 }
 
 @media only screen and (max-width: 768px) {
-  header nav li {
+  header nav li a {
     display: none;
   }
 
@@ -722,7 +727,6 @@ footer i,
   .resort-specific {
     padding: 10px;
     display: flex;
-    display: column;
     flex-flow: wrap;
     flex-direction: row;
     justify-content: center;
@@ -775,7 +779,7 @@ footer i,
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  header nav li {
+  header nav li a {
     display: none;
   }
 
