@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -55,8 +56,50 @@ footer nav a {
   background-size: cover;
 }
 
+.search-section h2 {
+  color: #989390;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.search-div {
+  width: 12%;
+  padding: 5px 10px;
+}
+
+.search-div select {
+  width: 100%;
+}
+
+.map div {
+  background-image: url("../resources/map.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 38vw;
+}
+
+.resort-specific div {
+  border: 1px solid #929292;
+  padding: 10px;
+  width: 40%;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.resort-specific p {
+  color: #509ad7;
+  padding: 0 10px;
+}
+
 .top-main div:first-child h2 {
   display: flex;
+}
+
+.more-details > * {
+  padding: 10px;
 }
 
 .top-main div > * {
@@ -65,6 +108,32 @@ footer nav a {
 
 .search-box div {
   display: flex;
+}
+
+.steps-template div {
+  padding: 20px 20px 40px;
+}
+
+.more-details div {
+  background-color: #f5f5f5;
+  padding: 20px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.results-found div {
+  width: 30%;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 15px;
+  text-align: center;
 }
 
 .top-main div:first-child {
@@ -81,7 +150,7 @@ footer nav a {
 .search-box {
   display: flex;
   flex-direction: column;
-  width: 810px;
+  width: 70%;
   padding: 45px 20px;
   background-color: rgba(255, 255, 255, 0.527);
   border-radius: 8px;
@@ -101,7 +170,8 @@ footer nav a {
   color: gray;
   padding: 10px;
   margin: 5px 0;
-  width: 75%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .search-box h4 {
@@ -130,13 +200,9 @@ footer nav a {
   text-align: center;
 }
 
-.steps-template div > *{
+.steps-template div > * {
   padding-bottom: 20px;
   color: rgb(107, 107, 107);
-}
-
-.steps-template div {
-  padding: 20px 20px 40px;
 }
 
 .steps-template {
@@ -218,6 +284,22 @@ footer nav {
   padding: 45px 25px 25px;
 }
 
+.social-footer li {
+  padding: 10px 5px;
+}
+
+.contact-specific li {
+  padding: 5px 5px;
+  display: flex;
+}
+
+.contact-specific button {
+  border: 1px solid #509ad7;
+  padding: 5px;
+  background-color: #509ad7;
+  color: white;
+}
+
 .detail-footer li:nth-child(1),
 .detail-footer li:nth-child(2),
 .detail-footer li:nth-child(3),
@@ -245,7 +327,7 @@ footer nav ul {
   border: 1px solid white;
   background-color: black;
   top: -18px;
-  width: 50px;
+  width: 60px;
   height: 60px;
   text-align: center;
   font-size: 20px;
@@ -275,6 +357,26 @@ footer nav ul {
   flex-direction: column;
 }
 
+.more-details div:hover,
+.img-res1,
+.img-res2,
+.img-res3,
+.img-res4,
+.img-res5,
+.img-res6,
+.img-res7 {
+  cursor: pointer;
+}
+
+.search-inputs button:first-of-type {
+  background-color: #457db4;
+  border: 1px solid #396ea2;
+  margin-right: 5px;
+  padding: 6px 9px;
+  color: white;
+  border-radius: 5px;
+}
+
 .contact section:first-child div {
   display: flex;
 }
@@ -284,6 +386,14 @@ footer nav ul {
   color: gray;
   padding: 10px 20px;
   background-color: black;
+}
+
+.search-inputs button:last-of-type {
+  background-color: #e5ab5b;
+  border: 1px solid #e19f45;
+  padding: 6px 9px;
+  color: white;
+  border-radius: 5px;
 }
 
 .contact section:first-child button {
@@ -311,10 +421,6 @@ footer nav ul {
   list-style: none;
 }
 
-.social-footer li {
-  padding: 10px 5px;
-}
-
 /* Search */
 
 .search-section {
@@ -325,12 +431,6 @@ footer nav ul {
   background-color: #d2dddfd0;
 }
 
-.search-section h2 {
-  color: #989390;
-  text-align: center;
-  margin-bottom: 15px;
-}
-
 .search-inputs {
   display: flex;
   font-size: 12px;
@@ -338,43 +438,12 @@ footer nav ul {
   align-items: flex-end;
 }
 
-.search-inputs input,
-.search-inputs option {
-  width: 85%;
-  padding: 3px 1px;
-  color: #1f1f1f;
-}
-
-.search-inputs div {
-  width: 12%;
-  padding: 5px 10px;
-}
-
-.search-inputs button:first-of-type {
-  background-color: #457db4;
-  border: 1px solid #396ea2;
-  margin-right: 5px;
-  margin-bottom: 6px;
-  padding: 6px 9px;
-  color: white;
-  border-radius: 5px;
-}
-
-.search-inputs button:last-of-type {
-  background-color: #e5ab5b;
-  border: 1px solid #e19f45;
-  margin-bottom: 6px;
-  padding: 6px 9px;
-  color: white;
-  border-radius: 5px;
-}
-
-.search-inputs h3 {
+.search-inputs label {
   padding-bottom: 5px;
 }
 
 .results {
-  color: rgb(82, 82, 82);
+  color: #665f61;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -387,13 +456,7 @@ footer nav ul {
   flex-flow: wrap;
   flex-direction: row;
   justify-content: center;
-}
-
-.results-found div {
-  background-color: #df74633a;
-  padding: 10px;
-  width: 30%;
-  margin: 10px;
+  width: 100%;
 }
 
 /* detail */
@@ -403,7 +466,7 @@ footer nav ul {
   margin: 15px;
   color: #1f1f1f;
   text-align: center;
-  box-shadow: 0px 0px 10px #929292;
+  box-shadow: 0 0 10px #929292;
 }
 
 .resort-specific {
@@ -414,31 +477,25 @@ footer nav ul {
   justify-content: center;
 }
 
-.resort-specific div {
-  border: 1px solid #929292;
-  padding: 10px;
-  width: 40%;
-  margin: 10px;
-}
-
 .contact-specific {
   display: flex;
   align-items: end;
   flex-direction: column;
+  font-weight: bold;
 }
 
 .contact-specific ul {
   display: flex;
   list-style: none;
-}
-
-.contact-specific li {
-  padding: 5px 10px;
-  display: flex;
+  padding-top: 20px;
 }
 
 .contact-specific p {
   color: #509bd7;
+}
+
+.contact-specific li > * {
+  padding: 0 5px;
 }
 
 .more-details {
@@ -447,24 +504,8 @@ footer nav ul {
   color: #1f1f1f;
 }
 
-.more-details > * {
-  padding: 10px;
-}
-
 .more-details i {
   padding-right: 10px;
-}
-
-.more-details div:hover {
-  cursor: pointer;
-}
-
-.more-details div {
-  background-color: #f5f5f5;
-  padding: 20px;
-  font-weight: bold;
-  letter-spacing: 10px;
-  font-size: 20px;
 }
 
 .map {
@@ -474,15 +515,70 @@ footer nav ul {
   text-align: center;
 }
 
-.map div {
-  background-image: url("../resources/map.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  height: 38vw;
-}
-
 .map h4 {
   padding-bottom: 50px;
+}
+
+.search-div input,
+.search-div select {
+  width: 90%;
+  padding: 3px 1px;
+  color: #1f1f1f;
+}
+
+.search-inputs div:nth-child(6) {
+  display: flex;
+  width: auto;
+  margin: 0;
+}
+
+.img-res1 {
+  background-image: url("https://travel.usnews.com/dims4/USNEWS/596e3e3/2147483647/resize/600x400^>/crop/600x400/quality/85/?url=https://travel.usnews.com/images/Four_Seasons_Resort_Lanai_usn_9.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+}
+
+.img-res2 {
+  background-image: url("https://travel.usnews.com/dims4/USNEWS/476b3a2/2147483647/resize/600x400^>/crop/600x400/quality/85/?url=https://travel.usnews.com/images/Rancho_Valencia_Resort_Spa_usn_12.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+}
+
+.img-res3 {
+  background-image: url("https://travel.usnews.com/dims4/USNEWS/e8d99b7/2147483647/resize/600x400^>/crop/600x400/quality/85/?url=https://travel.usnews.com/images/Montage_Kapalua_Bay_usn_10.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+}
+
+.img-res4 {
+  background-image: url("https://travel.usnews.com/dims4/USNEWS/bb9dfb3/2147483647/resize/600x400^>/crop/600x400/quality/85/?url=https://travel.usnews.com/images/The_Broadmoor_Colorado_Springs_usn_2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+}
+
+.img-res5 {
+  background-image: url("https://travel.usnews.com/dims4/USNEWS/29f3f35/2147483647/resize/600x400^>/crop/600x400/quality/85/?url=https://travel.usnews.com/images/Four_Seasons_Resort_Hualalai_at_Historic_Kaupulehu_usn_6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+}
+
+.img-res6 {
+  background-image: url("https://travel.usnews.com/dims4/USNEWS/136269f/2147483647/resize/600x400^>/crop/600x400/quality/85/?url=https://travel.usnews.com/images/Four_Seasons_Resort_Maui_at_Wailea_usn_16.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+}
+
+.img-res7 {
+  background-image: url("https://travel.usnews.com/dims4/USNEWS/d9f8d7d/2147483647/resize/600x400^>/crop/600x400/quality/85/?url=https://travel.usnews.com/images/Montage_Palmetto_Bluff_usn_29.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -512,10 +608,61 @@ footer nav ul {
     display: grid;
     grid-template-columns: 1fr;
   }
-  
+
+  .results-found div {
+    width: 90%;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+  }
+
   .feature-container div:first-child {
     width: 60%;
     margin: 30px 0;
+  }
+
+  .search-inputs div:nth-child(6) {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+
+  }
+
+  .search-inputs {
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .search-div input,
+  .search-div select {
+    width: 100%;
+    padding: 3px 1px;
+    color: #1f1f1f;
+  }
+
+  .search-inputs button:first-of-type {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .search-inputs button:last-of-type {
+    width: 100%;
+  }
+
+  .search-div {
+    width: 100%;
+    padding: 5px 10px;
   }
 
   /* Footer */
@@ -545,13 +692,66 @@ footer nav ul {
     flex-direction: column;
   }
 
-  /* seacrh */
+  .resort-specific {
 
-  .results-found div {
-    background-color: #df7463;
     padding: 10px;
-    width: 90%;
+    display: flex;
+    display: column;
+    flex-flow: wrap;
+    flex-direction: row;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .resort-specific div {
+    border: 1px solid #929292;
+    padding: 10px;
+    width: 100%;
     margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
+
+  .contact-specific ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .contact-specific button {
+    margin-right: 20px;
+  }
+
+  footer nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 5px 0;
+    border: none;
+    align-items: center;
+  }
+
+  .detail-footer {
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    padding: 45px 25px 25px;
+  }
+
+  footer nav li {
+    padding-bottom: 10px;
+  }
+
+  .contact {
+    display: flex;
+    padding: 20px 20px 10px;
+    text-align: center;
   }
 }
 
@@ -586,9 +786,49 @@ footer nav ul {
     display: none;
   }
 
+  .results-found div {
+    width: 42%;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .search-inputs {
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+    align-items: flex-end;
+    flex-flow: wrap;
+  }
+
+  .search-div {
+    width: 45%;
+    padding: 5px 10px;
+  }
+
+  .search-inputs div:nth-child(6) {
+    display: flex;
+    width: 70%;
+    margin-top: 30px;
+    justify-content: center;
+  }
+
   .feature-container div:first-child {
     width: 60%;
     margin: 30px 0;
+  }
+
+  .search-div input,
+  .search-div select {
+    width: 85%;
+    padding: 3px 1px;
+    color: #1f1f1f;
   }
 
   .contact section:first-child input {
@@ -597,14 +837,5 @@ footer nav ul {
 
   .contact section:first-child button {
     width: 40%;
-  }
-
-  /* search */
-
-  .results-found div {
-    background-color: #df7463;
-    padding: 10px;
-    width: 40%;
-    margin: 10px;
   }
 }
