@@ -15,7 +15,6 @@ header {
   padding: 8px 40px;
   background-color: #d45749;
   color: white;
-  width: fit-content;
 }
 
 nav {
@@ -137,7 +136,6 @@ footer nav a {
 }
 
 .top-main div:first-child {
-  width: fit-content;
   height: 100%;
   padding: 70px 10px;
   display: flex;
@@ -585,6 +583,11 @@ footer i,
   background-repeat: no-repeat;
   background-size: cover;
   height: 350px;
+}
+
+.img-res1 a {
+  color: white;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 768px) {
