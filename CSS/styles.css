@@ -12,7 +12,7 @@ body {
 
 header {
   padding: 8px 40px;
-  background-color: #df7463;
+  background-color: #d45749;
   color: white;
   width: fit-content;
 }
@@ -60,7 +60,7 @@ footer nav a {
 }
 
 .top-main div > * {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .search-box div {
@@ -81,19 +81,18 @@ footer nav a {
 .search-box {
   display: flex;
   flex-direction: column;
-  width: 410px;
-  padding: 30px 20px;
+  width: 810px;
+  padding: 45px 20px;
   background-color: rgba(255, 255, 255, 0.527);
   border-radius: 8px;
 }
 
 .search-box button {
-  border: 1px #df7463 solid;
-  background-color: #df7463;
+  border: 1px #d45749 solid;
+  background-color: #d45749;
   color: white;
   padding: 10px 20px;
   margin: 5px 0;
-  flex-grow: 2;
 }
 
 .search-box input {
@@ -102,7 +101,7 @@ footer nav a {
   color: gray;
   padding: 10px;
   margin: 5px 0;
-  flex-grow: 2;
+  width: 75%;
 }
 
 .search-box h4 {
@@ -120,31 +119,40 @@ footer nav a {
   grid-template-rows: auto auto;
   text-align: center;
   padding: 60px 20px;
-  color: #df7463;
+  color: #d45749;
 }
 
 .middle-main h4 {
   padding-bottom: 30px;
 }
 
+.middle-main p {
+  text-align: center;
+}
+
 .steps-template div > *{
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   color: rgb(107, 107, 107);
 }
 
 .steps-template div {
-  padding: 20px;
+  padding: 20px 20px 40px;
 }
 
 .steps-template {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
+}
+
+.steps-template i {
+  font-size: 25px;
 }
 
 .bottom-main button {
   border: 1px solid white;
   background-color: white;
-  padding: 3px 5px;
+  padding: 7px;
+  margin-top: 15px;
 }
 
 .feature-container {
@@ -152,12 +160,15 @@ footer nav a {
   justify-content: space-between;
   align-items: center;
   padding: 4% 15%;
-  line-height: 1.7;
 }
 
 .feature-container div:first-child {
   width: 40%;
   margin: 50px 0;
+}
+
+.feature-container div > * {
+  margin-bottom: 15px;
 }
 
 .first {
@@ -247,7 +258,8 @@ footer nav ul {
 
 .contact {
   display: flex;
-  padding: 20px;
+  padding: 40px 20px 10px;
+  text-align: center;
 }
 
 .contact h4 {
@@ -283,7 +295,7 @@ footer nav ul {
 
 .contact a,
 .contact a:hover {
-  color: #df7463;
+  color: #d45749;
 }
 
 .social-footer {
@@ -347,8 +359,8 @@ footer nav ul {
 }
 
 .search-inputs button:last-of-type {
-  background-color: #e5ab5b;
-  border: 1px solid #e3a045;
+  background-color: #d45749;
+  border: 1px solid #d45749;
   margin-bottom: 6px;
   padding: 6px 9px;
   color: white;
@@ -477,9 +489,9 @@ footer nav ul {
 
   .steps-template {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
   }
-
+  
   .feature-container div:first-child {
     width: 60%;
     margin: 30px 0;
@@ -539,7 +551,7 @@ footer nav ul {
 
   .steps-template {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
   }
 
   .contact section {
