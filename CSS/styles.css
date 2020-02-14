@@ -59,6 +59,10 @@ footer nav a {
   display: flex;
 }
 
+.top-main div > * {
+  margin-bottom: 20px;
+}
+
 .search-box div {
   display: flex;
 }
@@ -66,7 +70,7 @@ footer nav a {
 .top-main div:first-child {
   width: fit-content;
   height: 100%;
-  padding: 20px;
+  padding: 70px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -80,7 +84,6 @@ footer nav a {
   width: 410px;
   padding: 30px 20px;
   background-color: rgba(255, 255, 255, 0.527);
-  margin: 10px 0;
   border-radius: 8px;
 }
 
@@ -108,7 +111,7 @@ footer nav a {
 
 .gen-button {
   border: 1px white solid;
-  padding: 5px;
+  padding: 10px;
   margin: 5px 0;
 }
 
@@ -116,13 +119,21 @@ footer nav a {
   display: grid;
   grid-template-rows: auto auto;
   text-align: center;
-  padding: 20px;
+  padding: 60px 20px;
   color: #df7463;
 }
 
-.steps-template > * {
-  padding: 20px;
+.middle-main h4 {
+  padding-bottom: 30px;
+}
+
+.steps-template div > *{
+  padding-bottom: 10px;
   color: rgb(107, 107, 107);
+}
+
+.steps-template div {
+  padding: 20px;
 }
 
 .steps-template {
@@ -140,7 +151,7 @@ footer nav a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 15%;
+  padding: 4% 15%;
   line-height: 1.7;
 }
 
@@ -193,7 +204,7 @@ footer nav {
   background-color: black;
   display: flex;
   flex-direction: column;
-  padding: 25px;
+  padding: 45px 25px 25px;
 }
 
 .detail-footer li:nth-child(1),
@@ -298,12 +309,12 @@ footer nav ul {
   color: #1f1f1f;
   display: flex;
   flex-direction: column;
-  padding: 30px 20px;
+  padding: 70px 20px;
   background-color: #d2dddfd0;
 }
 
-.search-section h3 {
-  color: #98a4a5;
+.search-section h2 {
+  color: #989390;
   text-align: center;
   margin-bottom: 15px;
 }
@@ -312,10 +323,12 @@ footer nav ul {
   display: flex;
   font-size: 12px;
   justify-content: center;
+  align-items: flex-end;
 }
 
 .search-inputs input {
   width: 85%;
+  padding: 3px 1px;
 }
 
 .search-inputs div {
@@ -323,7 +336,26 @@ footer nav ul {
   padding: 5px 10px;
 }
 
-.search-inputs h4 {
+.search-inputs button:first-of-type {
+  background-color: #457db4;
+  border: 1px solid #396ea2;
+  margin-right: 5px;
+  margin-bottom: 6px;
+  padding: 6px 9px;
+  color: white;
+  border-radius: 5px;
+}
+
+.search-inputs button:last-of-type {
+  background-color: #e5ab5b;
+  border: 1px solid #e3a045;
+  margin-bottom: 6px;
+  padding: 6px 9px;
+  color: white;
+  border-radius: 5px;
+}
+
+.search-inputs h3 {
   padding-bottom: 5px;
 }
 
@@ -332,7 +364,7 @@ footer nav ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 15px 10px;
+  padding: 35px 10px;
 }
 
 .results-found {
@@ -353,7 +385,7 @@ footer nav ul {
 /* detail */
 
 .resort-detail {
-  padding: 15px;
+  padding: 25px 15px 15px;
   margin: 15px;
   color: #1f1f1f;
   text-align: center;
