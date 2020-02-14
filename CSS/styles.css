@@ -338,9 +338,11 @@ footer nav ul {
   align-items: flex-end;
 }
 
-.search-inputs input {
+.search-inputs input,
+.search-inputs option {
   width: 85%;
   padding: 3px 1px;
+  color: #1f1f1f;
 }
 
 .search-inputs div {
@@ -359,8 +361,8 @@ footer nav ul {
 }
 
 .search-inputs button:last-of-type {
-  background-color: #d45749;
-  border: 1px solid #d45749;
+  background-color: #e5ab5b;
+  border: 1px solid #e19f45;
   margin-bottom: 6px;
   padding: 6px 9px;
   color: white;
@@ -457,11 +459,30 @@ footer nav ul {
   cursor: pointer;
 }
 
+.more-details div {
+  background-color: #f5f5f5;
+  padding: 20px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  font-size: 20px;
+}
+
 .map {
-  color: #df7463;
+  color: #d45749;
   padding: 15px;
   margin: 15px;
   text-align: center;
+}
+
+.map div {
+  background-image: url("../resources/map.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 38vw;
+}
+
+.map h4 {
+  padding-bottom: 50px;
 }
 
 @media only screen and (max-width: 768px) {
